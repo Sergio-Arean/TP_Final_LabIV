@@ -1,0 +1,209 @@
+:root{
+    --rojo: #FF5858;
+    --gris: #E3E3E3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
+    
+  }
+  
+  ul{
+    list-style-type: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  dl, ol, ul { /*este lo agregue yo por una cuestion d ela libreria de boostrap que me pisaba el formato*/
+    margin:0;
+    padding:0;
+  }
+
+  button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+
+
+
+    background-color: black;
+    color: white;
+}
+
+  .contenedor{ /*lo que se suele llamar wrapper*/
+    display:grid;
+    grid-template-columns: 1fr 3.5fr 1fr; /*esto originalmente era 1fr 4fr*/
+    background-color: var(--gris);
+
+
+    background-color: black;
+    color: white;
+
+  }
+
+  body{ /*esto se lo agregue yo para que se pinte tooooodo el body, ya que el contenedor pintado solo se limita a pintar donde termina el contenedor*/
+    background-color: var(--gris);
+  }
+
+  aside{
+    padding: 3rem;
+    position:sticky; 
+    top:0;
+    height:100vh;
+
+    background-color: blanchedalmond; 
+
+
+    background-color: black;
+    color: white;
+  }
+
+  main{
+    margin-left: 5rem;
+  }
+
+  /*Barra navegacion*/
+  .barra-navegacion{
+    margin-top: 1rem;
+  }
+
+  .texto-opcion-menu{
+    text-align: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin-left: .9rem;
+    margin-top: 0.2rem;
+    cursor: pointer;
+  }
+
+  .opcion-menu:hover{
+    .texto-opcion-menu, .bi{
+      color: #FF5858;
+      transition: 0.1s;
+      font-weight: 800;
+    }
+  }
+
+
+
+  /*Seccion buscador*/
+  .seccion-buscador{
+    background-color: aqua;
+    margin-top: 2rem;
+    margin-left: 12rem;
+
+    background-color: black;
+    color: white;
+  }
+
+
+
+  /*Seccion Resultados en General*/
+  .seccion-resultados{
+    background-color: blanchedalmond; /*para pruebas*/
+   /* justify-content: center; /* Centra horizontalmente */
+  /*  align-items: center; /* Centra verticalmente */
+  background-color: black;
+  color: white;
+    
+  }
+
+  /*Codificando c/ resultado*/
+  .resultado{
+    display:flex;
+    /*flex-direction: column;*/ /*si esto esta activo el texto pasa abajo de la imagen.. cosa que no quiero*/
+    padding: 0.8rem;
+    width:100%;
+  }
+
+  .numero-resultado{
+    display:none;
+  }
+
+  .img-resultado{
+    /*border-radius: 50%;*/
+    width: 100%;
+    max-width: 8rem;
+    height: auto;
+    border-radius:25% ;
+  }
+
+
+  .datos-video{
+    margin-left: 2rem;
+    font-size: 0.85rem;
+
+  }
+
+  .datos-video p {
+    /*margin-bottom: 0; /* Elimina el margen para restablecer cualquier margen predeterminado */
+    padding: 0; /* Elimina el relleno para restablecer cualquier relleno predeterminado */
+    line-height: 0.8; /* Ajusta la altura de línea según tus preferencias (puedes cambiar este valor) */
+    font-size: 0.9rem;
+}
+
+.titulo-video{
+  font-weight: 600; /*el titulo con una especie de negrita*/
+ /* line-height: 10000px;*/ /*pendiente resolver interlineado en titulos largos*/
+}
+
+
+/*hover, interaccion c/usuario*/
+.resultado:hover{
+ /* background-color: rgba(0, 0, 0, 0.7);*/
+ /* background-color: #FF5858;*/
+  /*el de arriba en modo rgb:*/
+
+
+
+  .resultado{
+    background-color: rgba(255,88,88,0.3);
+    transition: background-color 0.3s;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************** MAPA *****************************************/
+svg{
+  
+  color: white;
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+
+path{
+  fill: grey;
+  color: white;
+}
+
+#MX:hover{
+  fill:#FF5858;
+  transition: 0.2s;
+}
+
+path:hover{
+  fill:#FF5858;
+  transition: 0.4s;
+}

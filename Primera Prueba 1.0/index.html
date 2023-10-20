@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Letra importada: tilt neon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!--css propio siempre al final!-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor"> <!--lo que se suele llamar wrapper-->
+        <aside>
+            <header>
+                <h1 class="logo">Youtube Explorer</h1>
+            </header>
+            <nav class="barra-navegacion">
+                <ul>
+                    <li class="opcion-menu"><button class="btn-opcion-menu"><i class="bi bi-globe-americas"></i><label class="texto-opcion-menu">Mapa</label></button></li>
+                    <li class="opcion-menu"><button class="btn-opcion-menu"><i class="bi bi-search"></i><label class="texto-opcion-menu">Continentes</label></button></li>
+                    <li class="opcion-menu"><button class="btn-opcion-menu"><i class="bi bi-clock-history"></i><label class="texto-opcion-menu">Historial</label></button></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="panel-principal"> <!--Lo que se suele llamar contenedor-productos-->
+
+                <div class="seccion-buscador">
+                  <label for="input-busqueda">Ingrese Pais<input type="text" id="input-busqueda" autocomplete="offf"></label>
+                  <button type="button" class="btn btn-success" id="btn-buscar">Buscar</button>
+                </div>
+
+                <!--<h1>Resultados</h1>-->
+                <section class="seccion-resultados">
+
+          
+
+                </section>
+
+
+
+
+            </div>
+        </main>
+
+        
+        <!--<section class="barra-derecha">HOLA SOY UNA POSIBLE BARRA DERECHA</section>-->
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
